@@ -1,8 +1,35 @@
 body {
 	padding: 100px 50px
 }
+
 .stepper-input {
 	appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+}
+
+.counter-header {
+	background-color: var(--nord2);
+	color: var(--nord4);
+	min-height: 40px;
+	padding: 10px;
+	font-size: 1.2em;
+	display: flex;
+	align-items: center;
+}
+
+.counter-body {
+	padding: 25px;
+	background-color: #fff;
+}
+
+.counter-total {
+	font-size: 5em;
+	color: var(--nord2);
+	text-align: center;
+	font-weight: bold;
+}
+
+.browser-not-support-wrapper {
+	margin: auto;
 }
