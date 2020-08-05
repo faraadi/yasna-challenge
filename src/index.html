@@ -10,6 +10,7 @@
 
 <body>
 	<noscript>
+		<!-- in case that user has denied javascript execution on this page, below message will be shown -->
 		<h2 align='center'>
 			you need to enable javascript to use this website
 		</h2>
@@ -21,14 +22,18 @@
 					<form id="counter-form">
 						<div class="form-group">
 							<div class="row gutter-tiny">
-								<div class="col xs-12 md-auto">
+								<div class="col xs-12">
+									<label for='counter-input' class="form-label" id='counter-label'>Counter
+										Step</label>
+								</div>
+								<div class="col xs-auto">
 									<input type="number" id="counter-input" class="form-control" placeholder="Step" />
+									<span class="form-helper">This only accepts numbers like 12, -5, 3.8,
+										30</span>
 								</div>
 								<div class="col">
-									<button type="submut" id="counter-btn" class="btn primary">Add Counter</button>
-								</div>
-								<div class="col xs-12 gutter-ignore">
-									<span class="form-helper">This only accepts numbers like 12, -5, 3.8, 30</span>
+									<button type="submut" id="counter-btn" class="btn primary">Add
+										Counter</button>
 								</div>
 							</div>
 						</div>
@@ -40,6 +45,9 @@
 			</div>
 		</div>
 	</div>
+
+
+	<!-- following block, is a html template and used to create counter's card. be default html templates are not painted to the dom -->
 	<template id="counter">
 		<div class="col xs-12 md-6 lg-4">
 			<div class="card counter">
