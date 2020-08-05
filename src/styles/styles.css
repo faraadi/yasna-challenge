@@ -1,5 +1,5 @@
 body {
-	padding: 100px 50px
+	padding: 100px 50px;
 }
 
 .stepper-input {
@@ -8,28 +8,16 @@ body {
 	-moz-appearance: none;
 }
 
-.counter-header {
-	background-color: var(--nord2);
-	color: var(--nord4);
-	min-height: 40px;
-	padding: 10px;
-	font-size: 1.2em;
-	display: flex;
-	align-items: center;
-}
-
-.counter-body {
-	padding: 25px;
-	background-color: #fff;
-}
-
-.counter-total {
-	font-size: 5em;
-	color: var(--nord2);
-	text-align: center;
-	font-weight: bold;
+#no-counters {
+	margin: 20px auto 20px auto;
 }
 
 .browser-not-support-wrapper {
 	margin: auto;
+}
+
+@media (max-width: 30em) {
+	body {
+		padding: 50px 15px;
+	}
 }

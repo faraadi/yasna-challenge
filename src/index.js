@@ -1,7 +1,7 @@
 import "./styles/index.css";
-import Counter from './counter';
+import Counter from './counter/counter';
 
-const counters = document.querySelector("#counters");
+const counterContainer = document.querySelector("#counters");
 
 if (document.createElement("template").content) {
 	const counterForm = document.querySelector("#counter-form");
@@ -12,7 +12,13 @@ if (document.createElement("template").content) {
 		e.preventDefault();
 		const step = Number(counterInput.value);
 
-		counters.appendChild(new Counter(step))
+		if (step !== 0) {
+			console.log(counterContainer.children[0], new Counter(step))
+			counterContainer.children[0].id === "no-counters"
+				? counterContainer.replaceChild(new Counter(step), counterContainer.children[0])
+				: counterContainer.appendChild(new Counter(step));
+
+		}
 		counterInput.value = null;
 	}
 
@@ -20,7 +26,7 @@ if (document.createElement("template").content) {
 	counterBtn.addEventListener("click", onAddCounter);
 }
 else {
-	counters.innerHTML = `
+	counterContainer.innerHTML = `
 	<div class="col browser-not-support-wrapper">
 		<div class='card'>
 			<div class='card-body'>
