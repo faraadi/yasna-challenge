@@ -1,6 +1,6 @@
 # Yasna Front-End Hiring Challenge
 
-this projects is built with vanilla javascript and css. no framework, no preprocessor.
+This projects is built with vanilla javascript and css. no framework, no preprocessor.
 
 - [Live Demo](https://yasna-challenge.netlify.app/)
 
