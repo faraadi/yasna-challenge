@@ -17,10 +17,6 @@ body {
 	border-radius: 4px;
 }
 
-#counter-label {
-	padding-left: var(--gutter-tiny);
-}
-
 .browser-not-support-wrapper {
 	margin: auto;
 }
