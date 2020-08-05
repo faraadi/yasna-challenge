@@ -1,0 +1,8 @@
+body {
+	padding: 100px 50px
+}
+.stepper-input {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}

@@ -1,4 +1,8 @@
 @import url('nord-ui/dist/base.css');
+@import url('nord-ui/dist/flex.css');
 @import url('nord-ui/dist/button.css');
+@import url('nord-ui/dist/card.css');
+@import url('nord-ui/dist/form.css');
 @import url('./fonts/fonts.css');
 @import url('./default.css');
+@import url('./styles.css');
