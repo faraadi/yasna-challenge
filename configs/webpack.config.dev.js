@@ -27,12 +27,23 @@ const config = {
 					MiniCssExtractPlugin.loader,
 					'css-loader'
 				]
-			}
+			},
+			{
+				test: /\.(png|svg|jpg|gif|woff|woff2|eot|ttf|otf|md|script.js)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							esModule: false,
+						},
+					},
+				]
+			},
 		]
 	},
 	devtool: 'inline-source-map',
 	devServer: {
-		contentBase: path.join(rootDir, 'public'),
+		contentBase: path.join(rootDir, 'src'),
 		publicPath: "/",
 		compress: true,
 		hot: true,
