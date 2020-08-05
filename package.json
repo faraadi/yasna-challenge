@@ -13,9 +13,7 @@
 		"clean": "rm -rf dist",
 		"dev": "webpack-dev-server --config ./configs/webpack.config.dev.js",
 		"build": "webpack --config ./configs/webpack.config.prod.js",
-		"analyze": "source-map-explorer 'dist/*.js'",
-		"build-dev": "webpack -d --mode development",
-		"build-prod": "webpack -p --mode production"
+		"analyze": "source-map-explorer 'dist/*.js'"
 	},
 	"dependencies": {
 		"nord-ui": "^0.10.4"

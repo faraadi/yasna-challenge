@@ -1,33 +1,35 @@
-# yasna-front-end-challenge
+# Yasna Front-End Hiring Challenge
 
-Empty project.
+this projects is built with vanilla javascript and css. no framework, no preprocessor.
 
-## Building and running on localhost
+- [Live Demo](https://yasna-challenge.netlify.app/)
 
-First install dependencies:
+- [Codesandbox](https://codesandbox.io/s/yasna-front-end-challenge-uq01d)
+
+- [Lightouse Test](https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fyasna-challenge.netlify.app%2F)
+
+## Dependencies
+- [nord-ui](https://github.com/faraadi/nord-ui): ui kit and elements used in app.
+
+## Developement
+
+First clone this repo and install dependencies:
 
 ```sh
+git clone https://github.com/faraadi/yasna-challenge.git
+cd yasna-challenge
 npm install
 ```
+check [http://localhost:3000]()
 
-To create a production build:
+## Build
 
-```sh
-npm run build-prod
-```
-
-To create a development build:
+To create a production-ready build:
 
 ```sh
-npm run build-dev
+npm run build
 ```
-
-## Running
-
-```sh
-node dist/bundle.js
-```
+now check `dist` directory in project's root.
 
 ## Credits
-
-Made with [createapp.dev](https://createapp.dev/)
+I used  [createapp.dev](https://createapp.dev/) to bootstrap the boilerplate. 
