@@ -11,6 +11,7 @@
 	"license": "MIT",
 	"scripts": {
 		"clean": "rm -rf dist",
+		"start": "npm run dev",
 		"dev": "webpack-dev-server --config ./configs/webpack.config.dev.js",
 		"build": "webpack --config ./configs/webpack.config.prod.js",
 		"analyze": "source-map-explorer 'dist/*.js'"

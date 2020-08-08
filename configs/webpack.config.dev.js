@@ -52,6 +52,7 @@ const config = {
 		clientLogLevel: "silent",
 		historyApiFallback: true,
 		watchContentBase: true,
+		disableHostCheck: true,
 		quiet: true,
 		overlay: {
 			warnings: false,
